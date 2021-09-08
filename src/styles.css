@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+div.container {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    transition: .5s ease;
+}
+
+div.container::-webkit-scrollbar{
+    display: none;
+}
+
+div.container div:nth-child(1){
+    min-width: 100vw;
+    height: 60vh;
+    background-image: url(./img/food_1.png);
+    background-size: cover;
+}
+
+div.container div:nth-child(2){
+    min-width: 100vw;
+    height: 60vh;
+    background-image: url(./img/food_2.png);
+    background-size: cover;
+}
+
+div.container div:nth-child(3){
+    min-width: 100vw;
+    height: 60vh;
+    background-image: url(./img/Delivery.png);
+    background-size: cover;
+}
+
+
+
+body div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+body div:nth-child(2) button{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 2px 0 #000;
+    background-color: rgba(255, 255, 255, .5);
+    position: relative;
+    bottom: 20px;
+}
+
+body div:nth-child(2) button:nth-child(1){
+    background-color: #fc801a;
+}
+
+
+body div:nth-child(3){
+    width: 70%;
+    margin: 0px auto;
+}
+
+body div:nth-child(3) h1{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 3vh;
+    opacity: 0;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+
+
+body div:nth-child(4){
+    font-size: 13px;
+    color: #93959f;
+    margin-top: 15px;
+    text-align: center;
+}
+
+body div:nth-child(5){
+    text-align: center;
+}
+
+body div:nth-child(5) button{
+    width: 220px;
+    height: 50px;
+    border: none;
+    background-color: #fc8019;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+body div:nth-child(6){
+    width: fit-content;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+body div:nth-child(6) a{
+    text-decoration: none;
+    color: #fc8019;
+}
